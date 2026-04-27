@@ -481,3 +481,32 @@ On Windows, Git may check out shell scripts with CRLF line endings instead of LF
 - [OpenClaw Docs](https://docs.openclaw.ai/)
 - [Cloudflare Sandbox Docs](https://developers.cloudflare.com/sandbox/)
 - [Cloudflare Access Docs](https://developers.cloudflare.com/cloudflare-one/policies/access/)
+
+
+#1.Cloudflare AI Gateway
+npx wrangler secret put CF_AI_GATEWAY_MODEL
+## workers-ai/@cf/meta/llama-3.3-70b-instruct-fp8-fast
+npx wrangler secret put CLOUDFLARE_AI_GATEWAY_API_KEY
+npx wrangler secret put CF_AI_GATEWAY_ACCOUNT_ID
+npx wrangler secret put CF_AI_GATEWAY_GATEWAY_ID
+#2.Authentication
+npx wrangler secret put MOLTBOT_GATEWAY_TOKEN
+npx wrangler secret put CF_ACCESS_TEAM_DOMAIN
+npx wrangler secret put CF_ACCESS_AUD
+#3.Chat channels (optional):
+npx wrangler secret put TELEGRAM_BOT_TOKEN
+npx wrangler secret put DISCORD_BOT_TOKEN
+npx wrangler secret put SLACK_BOT_TOKEN
+npx wrangler secret put SLACK_APP_TOKEN
+#4. Browser automation (optional):
+npx wrangler secret put CDP_SECRET
+npx wrangler secret put WORKER_URL
+#5. R2 persistent storage (for data persistence across container restarts):
+npx wrangler secret put R2_ACCESS_KEY_ID
+npx wrangler secret put R2_SECRET_ACCESS_KEY
+npx wrangler secret put CLOUDFLARE_ACCOUNT_ID
+npx wrangler secret put BACKUP_BUCKET_NAME
+
+
+
+
