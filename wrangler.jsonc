@@ -38,7 +38,16 @@
       "class_name": "Sandbox",
       "image": "./Dockerfile",
       "instance_type": "standard-1",
-      "max_instances": 1
+      "max_instances": 1,
+      "ssh": {
+        "enabled": true
+      },
+      "authorized_keys": [
+        {
+          "name": "openclaw",
+          "public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFnw101lzvyG1Z8zu+b0efP2XArefbAZw/x1aW88rjyZ tuanta2021@gmail.com"
+        }
+      ]
     }
   ],
   "durable_objects": {
